@@ -79,7 +79,7 @@ const MORSE_TABLE_UPD = {
 function decode(expr) {
     let inputExprAsArray = expr.match(/.{1,10}/g);
     let resExpr = '';
-    inputExprAsArray.forEach(element => resExpr.concat(MORSE_TABLE_UPD[element]));
+    inputExprAsArray.forEach(element => resExpr = resExpr.concat(MORSE_TABLE_UPD[element]));
     return resExpr;
 }
 
